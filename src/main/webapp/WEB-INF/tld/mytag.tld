@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">  
+  <description>MyTag library</description>
+  <display-name>JSTL functions</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>my</short-name> 
+  <function>
+    <description>Test if any value is number</description>
+    <name>isNumber</name>
+    <function-class>eltag.MyTagLib</function-class>
+    <function-signature>boolean isNumber(java.lang.String)</function-signature>
+   
+  </function>
+  <function>    
+    <name>takeGender</name>
+    <function-class>eltag.MyTagLib</function-class>
+    <function-signature>java.lang.String getGender(java.lang.String)</function-signature>
+   
+  </function>
+  <function>    
+    <name>isMember</name>
+    <function-class>eltag.MyTagLib</function-class>
+    <function-signature>boolean isMember(javax.servlet.ServletContext,java.lang.String,java.lang.String)</function-signature>
+   
+  </function>
+  <function>    
+    <name>selectList</name>
+    <function-class>eltag.MyTagLib</function-class>
+    <function-signature>java.util.List selectList(javax.servlet.ServletContext,int,int)</function-signature>
+   
+  </function>
+</taglib>
